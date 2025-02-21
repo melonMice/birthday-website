@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        /* Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            padding: 50px;
+            overflow: hidden;
+        }
+
+        /* Animated Heading */
+        h1 {
+            font-size: 50px;
+            color: #ff0000;
+            animation: bounce 2s infinite;
+        }
+
+        /* Animated Text */
+        p {
+            font-size: 20px;
+            color: #333;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Balloon Animation */
+        .balloons {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 150px;
+            background: radial-gradient(circle, #ff5733 30%, transparent 40%);
+            border-radius: 50%;
+            animation: floatUp 6s ease-in-out infinite;
+        }
+
+        /* Keyframe Animations */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes floatUp {
+            0% { top: 100%; opacity: 0; }
+            50% { opacity: 1; }
+            100% { top: -20%; opacity: 0; }
+        }
+
+        /* Generate multiple balloons */
+        .balloon1 { left: 20%; animation-duration: 5s; }
+        .balloon2 { left: 40%; animation-duration: 7s; }
+        .balloon3 { left: 60%; animation-duration: 6s; }
+        .balloon4 { left: 80%; animation-duration: 8s; }
+    </style>
+</head>
+<body>
+    <h1>🎉 Happy Birthday! 🎂</h1>
+    <p>Wishing you a fantastic year ahead filled with joy and success! ✨</p>
+
+    <!-- Floating Balloons -->
+    <div class="balloons balloon1"></div>
+    <div class="balloons balloon2"></div>
+    <div class="balloons balloon3"></div>
+    <div class="balloons balloon4"></div>
+</body>
+</html>
