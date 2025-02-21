@@ -29,7 +29,7 @@ This project generates a **QR code** that, when scanned, opens a beautifully ani
 
 ## 🖥️ Installation & Usage
 ### **1️⃣ Install Dependencies**
-Make sure you have Python installed, then install the required libraries:
+Make sure Python have installed, then install the required libraries:
 
 ```sh
 pip install qrcode[pil]
